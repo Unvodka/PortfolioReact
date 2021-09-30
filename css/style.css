@@ -1,0 +1,101 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(../img/main-background.jpg);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-align: center;
+}
+
+.header {
+  font-size: 1rem;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: rgb(65, 63, 63);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.title {
+  color: burlywood;
+}
+
+.portfolio {
+  max-width: 22%;
+  color: burlywood;
+}
+
+.nav {
+  display: flex;
+  flex-direction: raw;
+}
+
+ul li {
+  list-style-type: none;
+  color: burlywood;
+}
+
+.about-me {
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+}
+
+.myself {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.me {
+}
+
+.presentation {
+  display: flex;
+  flex-direction: row;
+}
+
+.about-me p {
+  padding: 5%;
+  min-width: 300px;
+}
+
+.about-me img {
+  margin: 5%;
+  border-radius: 5%;
+  width: 20%;
+}
+
+@media only screen and (max-width: 1079px) {
+  .header {
+    flex-direction: column;
+  }
+  .about-me {
+    flex-direction: column;
+  }
+  .presentation {
+    flex-direction: column;
+  }
+  .myself {
+    flex-direction: column;
+  }
+  .about-me p {
+    max-width: 90%;
+    text-align: center;
+  }
+  .about-me img {
+    border-radius: 5%;
+    width: 80%;
+  }
+}
