@@ -9,6 +9,7 @@ import Footer from "./components/Footer";
 import ContactMe from './components/Contact';
 import Services from './components/Services';
 import Particles from "react-particles-js";
+import Presentation from './components/Presentation';
 
 
 function App() {
@@ -17,13 +18,14 @@ function App() {
       <>
         <Home />
         <Particles 
+        height='180vh'
           params={{
             particles: {
               number: {
-                value: 40,
+                value: 30,
                 density: {
                   enable: true,
-                  value_area: 900
+                  value_area: 400
                 }
               },
               shape: {
@@ -37,9 +39,9 @@ function App() {
           }}
         />
         <Navbar />
+        <Presentation />
         <Header />
         <About />
-        <div id="experiencesId" className="experiences"><h2>EXPERIENCES</h2></div>
         <Resume />
         <Services />
         <ContactMe />

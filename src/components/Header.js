@@ -12,28 +12,19 @@ const Header = () => {
 
                 <Typed
                     className="typed"
-                    strings={["Web Development, Software Engineer"]}
+                    strings={[
+                        ' Web Integration',
+                        ' Web Design',
+                        ' Web Development',
+                        ' Web applications',
+                        ' Databases'
+                    ]}
                     typeSpeed={40}
                     backSpeed={50}
                     loop
-                    backDelay={10000}
+                    backDelay={1000}
                 />
                 <br/>
- 
-                <Typed
-                className="typing"
-                strings={[
-                    ' Integration',
-                    ' Design',
-                    ' Development',
-                    ' Databases',
-                    ' Web/mobil app']}
-                    typeSpeed={60}
-                    backSpeed={50}
-                    attr="placeholder"
-                    loop >
-                    <input type="text"/>
-                </Typed>
         
                 <a href="#contactId" className="btn-contact">Contact me now</a>
             
