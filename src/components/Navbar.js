@@ -1,10 +1,16 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { useContext } from 'react';
+import { ThemeContext } from '../context';
 
 const Navbar = () => {
+
+    const theme = useContext(ThemeContext);
+    const darkMode = theme.state.darkMode;
+
     return (
-        <nav className="navbar navbar-expand-lg navbar-light bg-dark">
+        <nav className="navbar navbar-expand-lg">
     
         <div className="container">
             
@@ -15,19 +21,24 @@ const Navbar = () => {
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul className="navbar-nav ml-auto">
                     <li className="nav-item">
-                    <a className="nav-link" aria-current="page" href="#aboutId">About</a>
+                    <a className="nav-links" aria-current="page" href="#aboutId" style={{backgroundColor: darkMode ? '#222' : 'wheat',
+                            color: darkMode ? 'wheat' : '#222'}}>About</a>
                     </li>
                     <li className="nav-item">
-                    <a className="nav-link" href="#experiencesId">Experiences</a>
+                    <a className="nav-links" href="#experiencesId" style={{backgroundColor: darkMode ? '#222' : 'wheat',
+                            color: darkMode ? 'wheat' : '#222'}}>Experiences</a>
                     </li>
                     <li className="nav-item">
-                    <a className="nav-link" href="#portfolioId">Portfolio</a>
+                    <a className="nav-links" href="#portfolioId" style={{backgroundColor: darkMode ? '#222' : 'wheat',
+                            color: darkMode ? 'wheat' : '#222'}}>Portfolio</a>
                     </li>
                     <li className="nav-item">
-                    <a className="nav-link" href="#servicesId">Services</a>
+                    <a className="nav-links" href="#servicesId" style={{backgroundColor: darkMode ? '#222' : 'wheat',
+                            color: darkMode ? 'wheat' : '#222'}}>Services</a>
                     </li>
                     <li className="nav-item">
-                    <a className="nav-link" href="#contactId">Contact</a>
+                    <a className="nav-links" href="#contactId" style={{backgroundColor: darkMode ? '#222' : 'wheat',
+                            color: darkMode ? 'wheat' : '#222'}}>Contact</a>
                     </li>
                 </ul>
             </div>

@@ -1,0 +1,26 @@
+.t-darkmode { 
+  display: flex;
+  flex-direction: row;
+  width: 100px;
+  height: 40px;
+  background-color: wheat;
+  border-radius: 20px;
+  border: 1px solid black;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 10;
+}
+.t-icon {
+  width: 40px;
+  height: 25px;
+  margin: 5px;
+}
+.t-button {
+  width: 40px;
+  height: 38px;
+  border-radius: 50%;
+  background-color: #212529;
+  position: absolute;
+  cursor: pointer;
+}

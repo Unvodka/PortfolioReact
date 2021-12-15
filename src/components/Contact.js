@@ -1,155 +1,60 @@
 import React from "react";
-import { init } from 'emailjs-com';
-import { useState } from "react";
-
-init("user_j0DBFik1bsTzzxgRJJoNa");
-
+import phoneIcon from '../phone-square-alt-solid.svg'
+import locationIcon from '../map-marker-alt-solid.svg'
+import emailIcon from '../envelope-square-solid.svg'
+import { useRef, useState } from "react";
+import emailjs from 'emailjs-com'
 
 const ContactMe = () => {
-  const [name, setName] = useState("");
-  const [company, setCompany] = useState("");
-  const [phone, setPhone] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
 
-  const isEmail = () => {
-    let mail = document.getElementById('not-mail');
-    let regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+  const [done, setDone] = useState(false)
 
-    if (email.match(regex)) {
-      mail.style.display = 'none'
-      return true;
-    } else {
-      mail.style.display = 'block'
-      mail.style.animation = 'dongle 1s'
-      setTimeout(() => {
-        mail.style.animation = 'none'
-      }, 2000);
-      return false;
-    }
-  }
-
-  const failMessage = () => {
-    let formMess = document.querySelector('.form-message')
-    formMess.innerHTML = 'Please full fill require fields *'
-    formMess.style.opacity = '1'
-    formMess.style.background = 'rgb(253,87,87)';
-
-    document.getElementById('name').classList.add('error');
-    document.getElementById('email').classList.add('error');
-    document.getElementById('message').classList.add('error');
-  }
-
-  const successMessage = () => {
-    let formMess = document.querySelector('.form-message')
-    formMess.innerHTML = 'Succes, your message has been send';
-    formMess.style.background = 'green';
-    formMess.style.opacity = '1';
-
-    document.getElementById('name').classList.remove('error');
-    document.getElementById('email').classList.remove('error');
-    document.getElementById('message').classList.remove('error');
-
-    setTimeout(() => {
-      formMess.style.opacity = '0';
-    }, 5000)
-  }
+  const formRef = useRef()
 
   const handleSubmit = (e) => {
-    e.preventDefault();
-
-    if (name && isEmail() && message) {
-      sendFeedback("template_d9wvswt", {
-        name,
-        company,
-        phone,
-        email,
-        message,
-      });
-    } else {
-      failMessage();
-    }
-  };
-
-
-  const sendFeedback = (templateId, variables) => {
-
-    window.emailjs
-      .send("gmail", templateId, variables)
-      .then((res) => {
-        successMessage();
-
-        setName("");
-        setCompany("");
-        setPhone("");
-        setEmail("");
-        setMessage("");
-      })
-      .catch(
-        (err) =>
-          document.querySelector('.form-message').innerHTML =
-          "An error occurs, please try again.")
-  };
+    e.preventDefault()
+    emailjs.sendForm('gmail', 'template_d9wvswt', formRef.current, 'user_j0DBFik1bsTzzxgRJJoNa')
+    .then((result) => {
+        console.log(result.text);
+        setDone(true)
+    }, (error) => {
+        console.log(error.text);
+    });
+  }
 
   return (
+    <div className="contact">
 
-    <form id="contactId" className="contact-form">
-      <h2>Contact :</h2>
-      <div className="form-content">
-        <input
-          type="text"
-          id="name"
-          name="name"
-          onChange={(e) => setName(e.target.value)}
-          placeholder="name *"
-          value={name}
-          autoComplete="off"
-        />
-        <input
-          type="text"
-          id="company"
-          name="company"
-          onChange={(e) => setCompany(e.target.value)}
-          placeholder="company"
-          value={company}
-        />
-        <input
-          type="text"
-          id="phone"
-          name="phone"
-          onChange={(e) => setPhone(e.target.value)}
-          placeholder="phone"
-          value={phone}
-        />
-        <div className="email-content">
-          <label id="not-mail">Non valid email</label>
-          <input
-            type="mail"
-            id="email"
-            name="email"
-            onChange={(e) => setEmail(e.target.value)}
-            placeholder="email *"
-            value={email}
-            autoComplete="off"
-          />
-        </div>
-        <textarea
-          id="message"
-          name="message"
-          onChange={(e) => setMessage(e.target.value)}
-          placeholder="message *"
-          value={message}
-        />
+      <div className="contact-left"> 
+        <h3>Let's discuss your projects</h3>
+        <p>As a fresh new developer i'm looking for an unpaid job wich can improve my skills and benefit to you also</p>
+        <p>Hoping to work in real world applications</p>
+        <p>I'm open to talk about projects and requirements we could have to work together.</p>
+        <p className="marg">Let's do that by the contact method of your choice</p>
+
+        <form className="form-form" ref={formRef} onSubmit={handleSubmit}>
+          <input type="text" placeholder="Name" name="user_name"></input>
+          <input type="text" placeholder="Subject" name="user_subject"></input>
+          <input type="text" placeholder="Email" name="user_email"></input>
+          <textarea rows="4" placeholder="Leave a message here" name="message"></textarea>
+          <button className="btn-form-contact">Submit</button>
+        </form>
+        {done && "Message was sent successfully, thank you ..."}
       </div>
-      <input
-        className="button"
-        type="button"
-        value="Send"
-        onClick={handleSubmit}
-      />
 
-      <div className="form-message"></div>
-    </form>
+      <div className="contact-right">
+        <h3>My personal contact :</h3>
+        <div className="contact-info">
+            <p><img src={locationIcon} alt="icon" className="contact-icon"/>
+                Location : Antibes, France UTC+1</p>
+            <p><img src={phoneIcon} alt="icon" className="contact-icon"/>
+                Phone : +33 07 49 48 62 03</p>
+            <p className="marg1"><img src={emailIcon} alt="icon" className="contact-icon"/>
+                Email : <a href="mailto:chevallier.a06@gmail.com"><p>chevallier.a06@gmail.com</p></a></p>
+        </div>
+      </div>
+
+    </div>
 
   );
 };

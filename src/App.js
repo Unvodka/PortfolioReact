@@ -1,22 +1,26 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Home from "./components/index";
 import Navbar from './components/Navbar';
-import Header from './components/Header';
-import Resume from "./components/Resume";
 import About from "./components/About";
 import Footer from "./components/Footer";
 import ContactMe from './components/Contact';
 import Services from './components/Services';
 import Particles from "react-particles-js";
 import Presentation from './components/Presentation';
+import ToggleDarkMode from './components/ToggleDarkMode';
+import { useState, useContext } from 'react';
+import { ThemeContext } from './context';
 
 
 function App() {
+
+  const theme = useContext(ThemeContext);
+  const darkMode = theme.state.darkMode;
+
   return (
-    <div className="App">
-      <>
-        <Home />
+    <div className="App" style={{backgroundColor: darkMode ? '#222' : 'wheat',
+         color: darkMode ? 'wheat' : '#222'}} >
+      
         <Particles 
         height='180vh'
           params={{
@@ -38,15 +42,14 @@ function App() {
             }
           }}
         />
+        <ToggleDarkMode />
         <Navbar />
         <Presentation />
-        <Header />
         <About />
-        <Resume />
         <Services />
         <ContactMe />
         <Footer />
-      </>
+      
     </div>
 
   );
