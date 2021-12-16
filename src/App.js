@@ -8,7 +8,7 @@ import Services from './components/Services';
 import Particles from "react-particles-js";
 import Presentation from './components/Presentation';
 import ToggleDarkMode from './components/ToggleDarkMode';
-import { useState, useContext } from 'react';
+import { useContext } from 'react';
 import { ThemeContext } from './context';
 
 

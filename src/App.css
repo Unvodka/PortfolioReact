@@ -49,10 +49,11 @@ nav a.nav-links {
 .nav-item > a {
   border-top: 0.18rem solid #222;
   transition: 0.5s ease-in;
+  padding-top: 0.5rem;
 }
 
 .nav-item > a:hover {
-  border-top: 0.18rem solid rgb(8, 108, 165);
+  border-top: 0.18rem solid rgb(125, 125, 126);
   color: whitesmoke;
 }
 ul {
@@ -60,18 +61,17 @@ ul {
 }
 nav ul li {
   text-transform: uppercase;
-  margin: 0 2rem;
+  margin: 1rem 2rem;
   color: wheat;
 }
 /*************************PRESENTATION******************************/
 
 .presentation {
-  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(8, 8, 100) 35%, rgb(2, 72, 112) 100%);
-    display: flex;
+  background: linear-gradient(90deg, wheat 0%, black 50%, wheat 100%);
+  display: flex;
   flex-direction: column;
   text-align: center;
   margin: 0 auto;
-  color: wheat;
   text-align: center;
 }
 .presentation-title {
@@ -84,7 +84,6 @@ nav ul li {
 .name {
   font-family: 'Roboto Mono', monospace;
   font-size: 44px;
-  color: blanchedalmond;
 }
 .presentation h1 {
   margin: 2%;
@@ -289,7 +288,7 @@ nav ul li {
 
 .services {
   height: 175vh;
-  width: 90%;
+  width: 100%;
   margin: 2.5rem auto;
   text-align: center;
   z-index: 3;
@@ -329,7 +328,7 @@ nav ul li {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   height: 60vh;
 }
 
@@ -338,10 +337,10 @@ nav ul li {
   justify-content: center;
   align-items: center;
   background-color: rgb(247, 237, 224);
-  width: 25%;
+  width: 28%;
   height: 300px;
   border-radius: 10px;
-  box-shadow: 16px -16px 0px 1px grey;
+  box-shadow: 16px -16px 0px 1px rgb(83, 83, 83);
   border: 1px solid wheat;
   margin: 1rem;
   margin-bottom: 3rem;
@@ -357,7 +356,7 @@ nav ul li {
 }
 .projects-portfolio {
   width: 100%;
-  transition: 10s ease;
+  transition: 15s ease;
 }
 .projects-portfolio:hover {
   transform: translateY(-75%)
@@ -381,16 +380,12 @@ nav ul li {
   flex-direction: row;
   font-family: 'Roboto Mono', monospace;
   border-top: 1px solid black;
-  background-color: black;
-
 }
 .contact-left {
   display: flex;
   flex-direction: column;
-  color: black;
   width: 80%;
   min-width: 60vh;
-  background-color: wheat;
   align-items: center;
   justify-content: center;
   font-size: 18px;
@@ -413,7 +408,6 @@ nav ul li {
   width: 40%;
   display: flex;
   flex-direction: column;
-  color: wheat;
   align-items: center;
   justify-content: center;
   font-size: 18px;
@@ -422,9 +416,7 @@ nav ul li {
   position: relative;
   text-decoration: underline;
 }
-.contact-right a {
-  color: wheat;
-}
+
 .contact-info {
   text-align: center;
   width: 100%;
@@ -445,7 +437,7 @@ nav ul li {
   margin-top: 2rem;
 }
 .form-form input, .form-form textarea {
-  background-color: wheat;
+  text-align: center;
   margin: 10px;
   border: none;
   border-bottom: 1px solid black;
@@ -455,13 +447,13 @@ nav ul li {
   left: 35%;
 }
 .btn-form-contact {
-  background-color: wheat;
   width: 5rem;
-  margin: 5px auto;
+  margin: 15px auto;
+  border-radius: 5px;
 }
 .btn-form-contact:hover {
-  background-color: black;
-  color: wheat;
+  background-color: black !important;
+  color: wheat !important;
 }
 
 
