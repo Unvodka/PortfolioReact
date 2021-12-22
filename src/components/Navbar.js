@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { useContext } from 'react';
 import { ThemeContext } from '../context';
+import './Navbar.css'
 
 const Navbar = () => {
 
@@ -15,10 +16,10 @@ const Navbar = () => {
         <div className="container">
             
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <FontAwesomeIcon icon={ faBars } style={{ color: "Antiquewhite" }}/>
+                <FontAwesomeIcon icon={ faBars } style={{ color: darkMode ? "Antiquewhite" : "#222"}}/>
             </button>
 
-            <div className="collapse navbar-collapse" id="navbarSupportedContent">
+            <div className="collapse navbar-collapse" id="navbarSupportedContent" style={{backgroundColor: darkMode ? '#222' : 'wheat'}}>
                 <ul className="navbar-nav ml-auto">
                     <li className="nav-item">
                     <a className="nav-links" aria-current="page" href="#aboutId" style={{backgroundColor: darkMode ? '#222' : 'wheat',

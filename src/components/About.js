@@ -1,7 +1,13 @@
 import React from 'react';
 import { useState } from 'react'
+import { useContext } from 'react';
+import { ThemeContext } from '../context';
+import './About.css'
 
 const About = () => {
+
+    const theme = useContext(ThemeContext);
+    const darkMode = theme.state.darkMode;
 
     const [readMore1, setReadMore1] = useState([false])
     const [readMore2, setReadMore2] = useState([false])
@@ -19,70 +25,78 @@ const About = () => {
             <h2>About Me</h2>
             <div className="container-about">
                 <div className="about"></div>
-                <p className="description">Bonjour,
-                    Je viens de terminer la formation full-stack engineer sur le language Javascript et j'aimerais trouver un stage en MERN stack, et a distance si possible.
-                    J'ai suivis des cours sur Codecademy.com et YouTube pour ces précieux tutoriels. Je regarde egalement beaucoup la documentation disponible sur chaque technologie. Precis et concis, je pense que cela me servira tout au long de cette carriere.
+                <p className="description" style={{backgroundColor: darkMode ? '#222' : 'wheat'}}>Hi, 
+        My name is Arnaud and i'm a front-end Web Developer.
+        I did a full-stack Javascript course on www.codecademy.com wich thaught me fondamentals of javascript and the web, then i learned how to use MongoDb, Express.js, React.js, and Node.js to follow the MERN stack.
+        i studyied Javascript, React.js, Express, mongoDB, Redux, html, CSS and i'm open to any additional training.
+        <br></br>
+        I'm still learning by course videos on Youtube. I watch a bunch of tutorials and take a special look at the documentation available for each technology that i'm using, for a better understanding of web development and how it works. Documentation is my new "bible".
 
-                    Diplômé du Bpjeps AAN (maître nageur) exercé jusqu'au deuxième confinement (début octobre 2020)
+        Now i want to put those skills to your service while observing your experience to take the best and make my skills a real quality to you and me in the same time.
+<br></br><br></br>
+        So, i'm seeking for a company who need a brand new web developer to find my place in the coding ship. <br></br>
 
-                    Pour ce qui est du code, ma formation etait autour de Javascript, React.js, Express, mongoDB, html et CSS. Egalement avide d'apprentissage j'aime decouvrir plus de technologies. Je suis a la recherche d'employeur qui necessite un stagiare en developement web afin d'y trouver ma place, echanger avec l'equipe et renforcer mon experience dans le domaine tout en mettant mes competances a votre service.
+        Here is my Github : <a href='https://github.com/Unvodka' rel="noreferrer" target='_blank'>https://github.com/Unvodka</a> <br></br>
 
-                    D'humeur joviale, enthousiaste et avenante je vous invite à me contacter afin d'échanger nos informations et besoins.
-                    Merci d'avance.
-                    Très cordialement Arnaud Chevallier
+        Im a happy person, not shy, enthousiast and good learner. <br></br>
+        Please let me know if we could help each other and find something.
+
+        Best regards
                 </p>
             </div>     
         </div> 
         
         <div id="experiencesId" className="box-timeline">  
 
-            <h2 className='experiences'>Experiences</h2>       
+            <h2 className='experiences'>Experiences</h2>   
 
-            <div className="box b1" data-anim="1">
-                <h5>Full Stack Engineer</h5>
-                <p>2021</p>
-                <p>{!readMore1 ? text1 : `${text1.substring(0, 100)}...`}
-                    <a href="https://www.codecademy.com/profiles/Arnaud-ca-dev" target='_blank' rel='noreferrer' alt="timeline" className="btn">www.Codecademy.com</a>
-                    <button className="btn-readmore" onClick={() => {
-                        setReadMore1(!readMore1)}}>{readMore1 ? "read more" : "show less"}
-                    </button>
-                </p>
+            <div className='boxes'>
+                <div className="box b1" data-anim="1" style={{backgroundColor: darkMode ? '#222' : 'rgb(250, 238, 216)'}}>
+                    <h5>Full Stack Engineer</h5>
+                    <p>2021</p>
+                    <p>{!readMore1 ? text1 : `${text1.substring(0, 100)}...`}
+                        <a href="https://www.codecademy.com/profiles/Arnaud-ca-dev" style={{color: darkMode ? 'rgb(250, 238, 216)' : '#222'}} target='_blank' rel='noreferrer' alt="timeline" className="btn">www.Codecademy.com</a>
+                        <button className="btn-readmore" onClick={() => {
+                            setReadMore1(!readMore1)}}>{readMore1 ? "read more" : "show less"}
+                        </button>
+                    </p>
+                    
+                </div>
                 
-            </div>
-               
-            <div className="box b2" data-anim="2">
-                <h5>JavaScript and React</h5>
-                <p>2020-2021 </p>
-                <p>{!readMore2 ? text2 : `${text2.substring(0, 100)}...`}
-                    <a href="https://www.codecademy.com/profiles/Arnaud-ca-dev" target='_blank' rel='noreferrer' alt="timeline" className="btn">www.Codecademy.com</a>
-                    <button className="btn-readmore" onClick={() => {
-                        setReadMore2(!readMore2)}}>{readMore2 ? "read more" : "show less"}
-                    </button>
-                </p>
-                
-            </div>
+                <div className="box b2" data-anim="2" style={{backgroundColor: darkMode ? '#222' : 'rgb(250, 238, 216)'}}>
+                    <h5>JavaScript and React</h5>
+                    <p>2020-2021 </p>
+                    <p>{!readMore2 ? text2 : `${text2.substring(0, 100)}...`}
+                        <a href="https://www.codecademy.com/profiles/Arnaud-ca-dev" style={{color: darkMode ? 'rgb(250, 238, 216)' : '#222'}} target='_blank' rel='noreferrer' alt="timeline" className="btn">www.Codecademy.com</a>
+                        <button className="btn-readmore" onClick={() => {
+                            setReadMore2(!readMore2)}}>{readMore2 ? "read more" : "show less"}
+                        </button>
+                    </p>
+                    
+                </div>
 
-            <div className="box b3" data-anim="3">
-                <h5> Html, and Css</h5>
-                <p>2020</p>
-                <p>{!readMore3 ? text3 : `${text3.substring(0, 100)}...`}
-                    <a href="https://www.codecademy.com/profiles/Arnaud-ca-dev" target='_blank' rel='noreferrer' alt="timeline" className="btn">www.Codecademy.com</a>
-                    <button className="btn-readmore" onClick={() => {
-                        setReadMore3(!readMore3)}}>{readMore3 ? "read more" : "show less"}
-                    </button>
-                </p>
-                
-            </div>
+                <div className="box b3" data-anim="3" style={{backgroundColor: darkMode ? '#222' : 'rgb(250, 238, 216)'}}>
+                    <h5> Html, and Css</h5>
+                    <p>2020</p>
+                    <p>{!readMore3 ? text3 : `${text3.substring(0, 100)}...`}
+                        <a href="https://www.codecademy.com/profiles/Arnaud-ca-dev" style={{color: darkMode ? 'rgb(250, 238, 216)' : '#222'}} target='_blank' rel='noreferrer' alt="timeline" className="btn">www.Codecademy.com</a>
+                        <button className="btn-readmore" onClick={() => {
+                            setReadMore3(!readMore3)}}>{readMore3 ? "read more" : "show less"}
+                        </button>
+                    </p>
+                    
+                </div>
 
-            <div className="box b4" data-anim="4">
-                <h5>What did i do before development :</h5>
-                <p>2016-2020</p>
-                <p>{!readMore4 ? text4 : `${text4.substring(0, 100)}...`}
-                    <button className="btn-readmore" onClick={() => {
-                        setReadMore4(!readMore4)}}>{readMore4 ? "read more" : "show less"}
-                    </button>
-                </p>
-            </div>
+                <div className="box b4" data-anim="4" style={{backgroundColor: darkMode ? '#222' : 'rgb(250, 238, 216)'}}>
+                    <h5>What did i do before development :</h5>
+                    <p>2016-2020</p>
+                    <p>{!readMore4 ? text4 : `${text4.substring(0, 100)}...`}
+                        <button className="btn-readmore" onClick={() => {
+                            setReadMore4(!readMore4)}}>{readMore4 ? "read more" : "show less"}
+                        </button>
+                    </p>
+                </div>
+            </div>          
            
         </div>
         </>

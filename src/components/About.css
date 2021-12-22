@@ -1,0 +1,160 @@
+.about {
+  width: 300px;
+  height: 300px;
+  background: url(../img/profil.jpg) no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  border-top: 1px solid black;
+  border-bottom: 1px solid wheat;
+  margin-left: 10%;
+  margin-bottom: 2.5%;
+  z-index: 2;
+}
+.description {
+  max-width: 60%;
+  z-index: 5;
+}
+.container-about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin: 1rem auto;
+  text-align: center;
+  font-family: 'Roboto Mono', monospace;
+  width: 80%;
+  font-size: 18px;
+}
+.container-about p {
+  line-height: 30px;
+  margin-left: 10%;
+}
+
+/**************************TIMELINE*********************************/
+
+.top {
+  border-top: 1px solid black;
+}
+.box-timeline {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+}
+.btn-readmore {
+  background-color: grey;
+  width: 80px;
+  border: 0px;
+  color: whitesmoke;
+  border-radius: 5px;
+}
+.btn-readmore:hover {
+  color: rgb(105, 105, 107);
+}
+.box-timeline a {
+  font-size: 14px;
+}
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 5%;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  box-shadow: 5px -5px 10px 1px black;
+  max-height: 60%;
+  max-width: 35%;
+  border-radius: 15px;
+  border: 1px solid wheat;
+  margin: 0.75rem;
+  padding-top: 0.75rem;
+  z-index: 3;
+}
+.box p {
+  padding: 10px;
+}
+@media screen and (min-width: 1500px) {
+  .container-about p {
+    line-height: 35px;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .about {
+    margin: auto;
+    width: 200px;
+    height: 200px;
+  }
+  .box {
+    max-width: 40%;
+    margin: 10px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .about {
+    width: 150px;
+    height: 150px;
+  }
+  .description {
+    max-width: 90%;
+  }
+  .container-about {
+    flex-direction: column;
+    width: 90%;
+  }
+  .container-about p {
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0;
+    margin-top: 4%;
+  }
+  .box-timeline p {
+    padding: 10px 10px 0 10px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .box-timeline a {
+    font-size: 12px;
+  }
+  .box {
+    margin: 0.75rem auto;
+    max-width: 40%;
+    padding: 5px;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .box-timeline p {
+    padding: 0;
+    line-height: 20px;
+  }
+  .box {
+    max-width: 85%;
+  }
+  
+  .container-about {
+    width: 95%;
+  }
+  .container-about p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .box-timeline p {
+    line-height: 20px;
+  }
+  .box {
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 361px) {
+
+}

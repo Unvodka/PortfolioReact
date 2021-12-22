@@ -3,6 +3,8 @@ import  MyCarousel from './Carousel';
 import portFolio from '../img/portfolio.png'
 import budgetNodeApp from '../img/budget-node-app.png'
 import swimmingTeacher from '../img/swimming-teacher.png'
+import gallery from '../img/filter-gallery.png'
+import './Services.css'
 
 const Services = () => {
     return (
@@ -20,28 +22,28 @@ const Services = () => {
                 </div>
                 <div className='project'>
                     <article>
-                        <div className='img-container'><img src={portFolio} alt="fullpage img"  className='projects-portfolio'/></div>
+                        <div className='img-container'><img src={portFolio} alt="portfolio project"  className='projects-portfolio'/></div>
                         <h5 className='project-title'>Portfolio</h5>
-                        <p className='project-description'>Here is a basic portfolio wich could have multiples animations</p>
+                        <p className='project-description'>Here is a portfolio wich can be fully personalised</p>
                     </article>
                 </div>
                 <div className='project'>
                     <article>
-                        <div className='img-container'><img src={swimmingTeacher} alt="teacher img"  className='projects-portfolio'/></div>
-                        <h5 className='project-title'>Title</h5>
-                        <p className='project-description'>Incoming Project...</p>
+                        <div className='img-container'><img src={swimmingTeacher} alt="teacher project"  className='projects-portfolio'/></div>
+                        <h5 className='project-title'>Swimming Teacher website</h5>
+                        <p className='project-description'>Basic website for more visibility fully adaptable to your needs</p>
                     </article>
                 </div>
                 <div className='project'>
                     <article>
-                        <div className='img-container'><p>Picture...</p></div>
-                        <h5 className='project-title'>Title</h5>
-                        <p className='project-description'>Incoming Project...</p>
+                        <div className='img-container'><img src={gallery} alt="gallery project" className='projects-portfolio'/></div>
+                        <h5 className='project-title'>Filterable Gallery</h5>
+                        <p className='project-description'>Simple filter on a gallery by categories and an input search</p>
                     </article>
                 </div>
                 <div className='project'>
                     <article>
-                        <div className='img-container'>Picture...</div>
+                        <div className='img-container'></div>
                         <h5 className='project-title'>Title</h5>
                         <p className='project-description'>Incoming Project...</p>
                     </article>

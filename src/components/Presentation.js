@@ -2,6 +2,7 @@ import React from 'react';
 import Typed from 'react-typed';
 import { useContext } from 'react';
 import { ThemeContext } from '../context';
+import './Presentation.css'
 
 const Presentation = () => {
 
@@ -12,7 +13,7 @@ const Presentation = () => {
     <>
     <div className='presentation' style={{background: darkMode ? "linear-gradient(100deg, #222 0%, wheat 50%, #222 100%)" : ""}}>
         <div className='presentation-title'>
-            <p className='hello' style={{color: darkMode ? '#222' : 'wheat'}}>Hello my name is</p>
+            <p className='hello' style={{color: darkMode ? '#222' : 'wheat'}}>Hello, my name is</p>
             <h1 className='name' style={{color: darkMode ? '#222' : 'wheat'}}>Arnaud</h1>
         </div>
     

@@ -1,9 +1,10 @@
 import React from "react";
-import phoneIcon from '../phone-square-alt-solid.svg'
-import locationIcon from '../map-marker-alt-solid.svg'
-import emailIcon from '../envelope-square-solid.svg'
+import phoneIcon from '../img/phone-square-alt-solid.svg'
+import locationIcon from '../img/map-marker-alt-solid.svg'
+import emailIcon from '../img/envelope-square-solid.svg'
 import { useRef, useState } from "react";
 import emailjs from 'emailjs-com'
+import './Contact.css'
 import { useContext } from 'react';
 import { ThemeContext } from '../context';
 

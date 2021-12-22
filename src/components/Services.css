@@ -1,0 +1,141 @@
+.services {
+  height: 190vh;
+  width: 100%;
+  margin-top: 2.5rem;
+  text-align: center;
+  z-index: 3;
+}
+.projects-h4 {
+  margin: 0 auto;
+}
+.projects {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 60vh;
+  margin: 3rem auto;
+}
+.project {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(247, 237, 224);
+  width: 28%;
+  height: 300px;
+  border-radius: 10px;
+  box-shadow: 8px -8px 1px 1px rgb(90, 90, 92);
+  border: 1px solid wheat;
+  margin: 1rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+.project article {
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.project p, .project h5 {
+  color: #1c3855;
+  margin: 10px;
+}
+.projects-portfolio {
+  width: 100%;
+  transition: 15s ease;
+}
+.projects-portfolio:hover {
+  transform: translateY(-100%)
+}
+.img-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 65%;
+  background-color: rgb(191, 192, 192);
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid black;
+}
+
+@media screen and (max-width: 1500px) {
+
+}
+
+@media screen and (max-width: 1199px) {
+  .services {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    color: wheat;
+  }
+  .projects {
+    height: 80vh;
+  }
+  .project {
+    margin: 1rem;
+  }
+  .services h2 {
+    margin: 5% auto 4% auto;
+  }
+  .carousel .slide .legend {
+    font-size: 20px;
+    opacity: 0.5;
+  }
+  .legend {
+    font-size: 16px !important;
+  }
+  .bi {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .projects {
+    min-height: 260vh;
+  }
+  .project p, .project h5 {
+    color: #1c3855;
+    margin: 5px;
+  }
+  .project {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .services {
+    max-height: 255vh;
+    width: 90%;
+  }
+  .carousel-container {
+    height: 20%;
+  }
+  .projects {
+    max-height: 240vh;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: stretch;
+  }
+  .project {
+    width: 95%;
+    height: 250px;
+    margin: 1rem auto;
+  }  
+}
+
+@media screen and (max-width: 361px) {
+  .services {
+    max-height: 285vh;
+    width: 90%;
+  }
+  .carousel-container {
+    height: 20%;
+  }
+  .projects {
+    max-height: 230vh;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: stretch;
+  }
+}
