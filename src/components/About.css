@@ -4,8 +4,7 @@
   background: url(../img/profil.jpg) no-repeat;
   background-size: cover;
   border-radius: 50%;
-  border-top: 1px solid black;
-  border-bottom: 1px solid wheat;
+  border: 1px solid wheat;
   margin-left: 10%;
   margin-bottom: 2.5%;
   z-index: 2;
@@ -35,6 +34,7 @@
 .top {
   border-top: 1px solid black;
 }
+
 .box-timeline {
   display: flex;
   flex-direction: column;

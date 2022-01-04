@@ -105,7 +105,7 @@
 
 @media screen and (max-width: 420px) {
   .services {
-    max-height: 255vh;
+    max-height: 265vh;
     width: 90%;
   }
   .carousel-container {
@@ -126,7 +126,7 @@
 
 @media screen and (max-width: 361px) {
   .services {
-    max-height: 285vh;
+    max-height: 305vh;
     width: 90%;
   }
   .carousel-container {

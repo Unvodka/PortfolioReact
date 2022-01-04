@@ -3,9 +3,10 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import { Carousel } from 'react-responsive-carousel';
 import webDev from '../img/collab.jpg';
 import design from '../img/design1.jpg';
-import './Carousel.css'
+import './Carousel.css';
 
 class MyCarousel extends Component {
+    
     render() {
         return (
             <Carousel className="carousel-container" infiniteLoop="true">

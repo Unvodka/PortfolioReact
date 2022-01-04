@@ -28,7 +28,7 @@ const About = () => {
                 <p className="description" style={{backgroundColor: darkMode ? '#222' : 'wheat'}}>Hi, 
         My name is Arnaud and i'm a front-end Web Developer.
         I did a full-stack Javascript course on www.codecademy.com wich thaught me fondamentals of javascript and the web, then i learned how to use MongoDb, Express.js, React.js, and Node.js to follow the MERN stack.
-        i studyied Javascript, React.js, Express, mongoDB, Redux, html, CSS and i'm open to any additional training.
+        I continued to study around Javascript, Redux and i'm now building small applications and open to any additional training or take a job.
         <br></br>
         I'm still learning by course videos on Youtube. I watch a bunch of tutorials and take a special look at the documentation available for each technology that i'm using, for a better understanding of web development and how it works. Documentation is my new "bible".
 

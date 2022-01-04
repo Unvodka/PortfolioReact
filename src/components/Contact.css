@@ -168,10 +168,12 @@
   }
   .contact-left h3 {
     margin: 2rem;
+    max-width: 80%;
   }
   .contact-left p {
-    max-width: 80%;
+    max-width: 70%;
     margin: 0.5rem;
+    padding-right: 20%;
   }
   .contact-left p, .contact-left h3 {
     right: 0%
@@ -182,5 +184,13 @@
 }
 
 @media screen and (max-width: 361px) {
-  
+  .contact {
+    min-height: 175vh;
+  }
+
+  .contact-left p {
+    max-width: 100%;
+    left: 2rem;
+
+  }
 }

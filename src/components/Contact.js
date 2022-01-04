@@ -29,7 +29,7 @@ const ContactMe = () => {
   }
 
   return (
-    <div className="contact">
+    <div className="contact" id="contactId">
 
       <div className="contact-left" style={{backgroundColor: darkMode ? 'wheat' : '#222',
          color: darkMode ? '#222' : 'wheat'}}> 
