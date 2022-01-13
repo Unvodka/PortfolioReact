@@ -12,6 +12,7 @@ h2 {
 
 .App {
   background-color: #222;
+  overflow-x: hidden;
 }
 
 @media screen and (max-width: 1099px) {

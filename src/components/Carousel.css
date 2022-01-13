@@ -49,8 +49,14 @@
 
 }
 
-@media screen and (max-width: 420px) {
-
+@media screen and (max-width: 429px) {
+  .carousel-img p {
+    letter-spacing: 0.1rem;
+    font-size: 14px;
+  }
+  .carousel .slide .legend {
+    bottom: 0;
+  }
 }
 
 @media screen and (max-width: 361px) {

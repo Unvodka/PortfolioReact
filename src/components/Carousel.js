@@ -3,6 +3,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import { Carousel } from 'react-responsive-carousel';
 import webDev from '../img/collab.jpg';
 import design from '../img/design1.jpg';
+import development from '../img/mainbackground.jpg'
 import './Carousel.css';
 
 class MyCarousel extends Component {
@@ -20,8 +21,8 @@ class MyCarousel extends Component {
                     <p className="legend">Web Design</p>
                 </div>
                 <div className="carousel-img">
-                    <img src="/relaxation3.jpg" alt="relaxation"/>
-                    <p className="legend">Relaxation</p>
+                    <img src={development} alt="Web Development"/>
+                    <p className="legend">Web Development</p>
                 </div>
                 <div className="carousel-img">
                     <img src="/training3.jpg" alt="training" />

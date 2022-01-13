@@ -27,6 +27,7 @@ nav a.nav-links {
   z-index: 5;
   margin: 0 auto;
   text-decoration: none;
+  text-transform: uppercase;
 }
 .navbar-nav {
   z-index: 15;
@@ -41,13 +42,10 @@ nav a.nav-links {
 }
 ul {
   margin: 0 auto;
-  background-color: #222;
 }
 nav ul li {
   text-transform: uppercase;
   margin: 1rem 2rem;
-  color: wheat;
-  background-color: #222;
 }
 
 @media screen and (max-width: 1500px) {

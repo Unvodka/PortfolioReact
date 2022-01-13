@@ -23,23 +23,28 @@ const Navbar = () => {
             <div className="collapse navbar-collapse" id="navbarSupportedContent" style={{backgroundColor: darkMode ? '#222' : 'wheat',
                         borderBottom: darkMode ? "1px solid wheat" : '1px solid #222'}}>
                 <ul className="navbar-nav ml-auto">
-                    <li className="nav-item" >
+                    <li className="nav-item" style={{backgroundColor: darkMode ? '#222' : 'wheat',
+                            color: darkMode ? 'wheat' : '#222'}}>
                     <a className="nav-links" aria-current="page" href="#aboutId" style={{backgroundColor: darkMode ? '#222' : 'wheat',
                             color: darkMode ? 'wheat' : '#222'}}>About</a>
                     </li>
-                    <li className="nav-item">
+                    <li className="nav-item" style={{backgroundColor: darkMode ? '#222' : 'wheat',
+                            color: darkMode ? 'wheat' : '#222'}}>
                     <a className="nav-links" href="#experiencesId" style={{backgroundColor: darkMode ? '#222' : 'wheat',
                             color: darkMode ? 'wheat' : '#222'}}>Experiences</a>
                     </li>
-                    <li className="nav-item">
+                    <li className="nav-item" style={{backgroundColor: darkMode ? '#222' : 'wheat',
+                            color: darkMode ? 'wheat' : '#222'}}>
                     <a className="nav-links" href="#servicesId" style={{backgroundColor: darkMode ? '#222' : 'wheat',
                             color: darkMode ? 'wheat' : '#222'}}>Services</a>
                     </li>
-                    <li className="nav-item">
+                    <li className="nav-item" style={{backgroundColor: darkMode ? '#222' : 'wheat',
+                            color: darkMode ? 'wheat' : '#222'}}>
                     <a className="nav-links" href="#portfolioId" style={{backgroundColor: darkMode ? '#222' : 'wheat',
                             color: darkMode ? 'wheat' : '#222'}}>Portfolio</a>
                     </li>
-                    <li className="nav-item">
+                    <li className="nav-item" style={{backgroundColor: darkMode ? '#222' : 'wheat',
+                            color: darkMode ? 'wheat' : '#222'}}>
                     <a className="nav-links" href="#contactId" style={{backgroundColor: darkMode ? '#222' : 'wheat',
                             color: darkMode ? 'wheat' : '#222'}}>Contact</a>
                     </li>
