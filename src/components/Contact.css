@@ -1,6 +1,5 @@
 .contact {
   width: 100%;
-  height: 80vh;
   display: flex;
   flex-direction: row;
   font-family: 'Roboto Mono', monospace;
@@ -14,6 +13,7 @@
   justify-content: center;
   font-size: 18px;
   clip-path: polygon(70% 0, 100% 50%, 70% 100%, 0% 100%, 0 54%, 0% 0%);
+  padding: 1rem;
 }
 .contact-left p {
   position: relative;
@@ -23,7 +23,7 @@
 .contact-left h3 {
   margin-top: 5rem;
   position: relative;
-  bottom: 10%;
+  bottom: 8%;
   right: 10%;
   font-size: 40px;
 }
@@ -35,6 +35,7 @@
   align-items: center;
   justify-content: center;
   font-size: 18px;
+  padding: 1rem;
 }
 .contact-right h3 {
   position: relative;
@@ -131,7 +132,6 @@
 @media screen and (max-width: 780px) {
   .contact {
     flex-direction: column;
-    min-height: 150vh;
   }
   .marg {
     margin: 2rem auto;
@@ -158,13 +158,13 @@
     margin-bottom: 2.5rem;
   }
   .contact {
-    min-height: 150vh;
     width: 100%;
     overflow-x: hidden;
   }
   .contact-left {
     width: 100%;
     clip-path: none;
+    padding: 3rem;
   }
   .contact-left h3 {
     margin: 2rem;
@@ -178,7 +178,7 @@
     right: 0%
   }
   .contact-right {
-    height: 60vh;
+    padding: 3rem 0;
   }
   .form-form {
     margin: auto;
@@ -188,7 +188,6 @@
 @media screen and (max-width: 379px) {
   .contact {
     margin: 0rem;
-    height: 175vh;
   }
 
   .contact-left {
@@ -197,27 +196,22 @@
 
   .contact-left p {
     max-width: 70%;
-    left: 2rem;
+    left: 1rem;
   }
-  .contact-right {
-    height: 80vh;
-  }
+  
 }
 
 @media screen and (max-width: 300px) {
-  .contact {
-    height: 200vh;
-  }
   .contact-left {
     width: 100%;
   }
 
   .contact-left p {
-    max-width: 60%;
+    max-width: 100%;
   }
   .contact-left h3 {
     margin: 1rem;
-    max-width: 60%;
+    max-width: 90%;
   }
   .contact-right {
     padding: 20px;
