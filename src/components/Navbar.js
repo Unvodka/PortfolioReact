@@ -22,7 +22,8 @@ const Navbar = () => {
 
             <div className="collapse navbar-collapse" id="navbarSupportedContent" style={{backgroundColor: darkMode ? '#222' : 'wheat',
                         borderBottom: darkMode ? "1px solid wheat" : '1px solid #222'}}>
-                <ul className="navbar-nav ml-auto">
+                <ul className="navbar-nav ml-auto" style={{backgroundColor: darkMode ? '#222' : 'wheat',
+                            color: darkMode ? 'wheat' : '#222'}}>
                     <li className="nav-item" style={{backgroundColor: darkMode ? '#222' : 'wheat',
                             color: darkMode ? 'wheat' : '#222'}}>
                     <a className="nav-links" aria-current="page" href="#aboutId" style={{backgroundColor: darkMode ? '#222' : 'wheat',

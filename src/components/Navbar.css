@@ -15,6 +15,7 @@ nav {
   height: 6rem;
   width: 100vw;
   z-index: 15;
+  transition: 1s ease;
 }
 .navbar-toggler {
   z-index: 16;

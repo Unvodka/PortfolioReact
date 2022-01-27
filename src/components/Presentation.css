@@ -173,7 +173,11 @@
   }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 480px) {
+  .header-wraper {
+    display: none;
+  }
+
   .presentation p {
     font-size: 18px;
   }
