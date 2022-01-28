@@ -26,15 +26,15 @@ const About = () => {
             <div className="container-about">
                 <div className="about"></div>
                 <p className="description" style={{backgroundColor: darkMode ? '#222' : 'wheat'}}>Hi, 
-        My name is Arnaud and i'm a front-end Web Developer.
-        I did a full-stack Javascript course on www.codecademy.com wich thaught me fondamentals of javascript and the web, then i learned how to use MongoDb, Express.js, React.js, and Node.js to follow the MERN stack.
-        I continued to study around Javascript, Redux and i'm now building small applications and open to any additional training or take a job.
+        My name is Arnaud and i'm a junior Web Developer.
+        I did a full-stack Javascript course on <a href='https://www.codecademy.com.' rel="noreferrer" target='_blank'>https://www.codecademy.com</a> wich thaught me fondamentals of javascript and the web, then i started to learn how to use MongoDb, Express.js, React.js, and Node.js to follow the MERN stack.
+        I kept studying around Javascript, Redux and i'm now building small web applications and open to any additional training or job.
         <br></br>
-        I'm still learning by course videos on Youtube. I watch a bunch of tutorials and take a special look at the documentation available for each technology that i'm using, for a better understanding of web development and how it works. Documentation is my new "bible".
+        I'm still watching tons of tutorials, and take a special look at the documentation available for each technology that i'm using. Wich is good for fast and better understanding of technologies specifications and schemas.<br />
 
-        Now i want to put those skills to your service while observing your experience to take the best and make my skills a real quality to you and me in the same time.
+        Now i want to put my recent acquired skills to your service while observing your experience to take the best of it and make our collaboration a real synergy in term of work, results and conditions.
 <br></br><br></br>
-        So, i'm seeking for a company who need a brand new web developer to find my place in the coding ship. <br></br>
+        So, i'm seeking for a company who need a brand new web developer to find quickly my place in the coding ship. <br></br>
 
         Here is my Github : <a href='https://github.com/Unvodka' rel="noreferrer" target='_blank'>https://github.com/Unvodka</a> <br></br>
 
