@@ -18,7 +18,7 @@ const About = () => {
     const text2 = "Time to get more understanding of web development. I realised a bit more the width  and height of the web, his mecanisms and languages. I stayed focus on Javascript and React. I started Codecademy pro courses like 'Learn Javascript', or 'Learn React.js', also some sides videos on youtube as well and almost all courses was part of the Full stack career path course still on Codecademy. ";
     const text3 = "I started to learn coding and his basics wich are HTLM and CSS. I appreciate to discover new skills, it was the beginning of an amazing coding experience. It wasn't that hard for a swimming teacher and with enthousiasm i kept going. Then i started to write code on the side just to practice and watch videos like advanced css, flexbox etc... , and others comparing differents technologies around Javascript wich was recommended by a Web Developer friend";
     const text4 = "I worked for 5 years as self-employed swimming teacher and aquafitness instructor in pools, spa, hotels and sport centers. That was a really good experience wich teached me to work with differents publics and differents structures. Also as work in team and respect protocols. I really enjoyed it but i decided to change my activity when the Covid came and close everything about sport. Then i started to learn wev development.";
-   
+
     return (
         <>
         <div id="aboutId" className="top">

@@ -121,6 +121,12 @@
   color: rgb(250, 240, 226);
 }
 
+@media screen and (min-width: 1501px) {
+  .main-info {
+    top: 200px;
+  }
+}
+
 @media screen and (max-width: 1500px) {
   .header-wraper {
     display: flex;
@@ -178,6 +184,10 @@
     display: none;
   }
 
+  .presentation {
+    border-bottom: 1px solid wheat;
+    border-top: 1px solid wheat;
+  }
   .presentation p {
     font-size: 18px;
   }

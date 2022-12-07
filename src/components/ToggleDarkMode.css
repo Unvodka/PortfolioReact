@@ -1,13 +1,13 @@
 .t-darkmode { 
   display: flex;
   flex-direction: row;
-  width: 60px;
-  height: 30px;
+  width: 64px;
+  height: 34px;
   background-color: wheat;
   border-radius: 20px;
   border: 1px solid black;
   position: fixed;
-  top: 20px;
+  top: 22px;
   right: 20px;
   z-index: 16;
 }
@@ -22,6 +22,8 @@
   border-radius: 50%;
   background-color: #212529;
   position: absolute;
+  top: 2px;
+  margin-left: 1px;
   cursor: pointer;
   transition: 0.5s ease;
 }

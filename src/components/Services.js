@@ -16,7 +16,7 @@ const Services = () => {
             <div className='projects'>
                 <div className='project'>
                     <article>
-                        <div className='img-container'><video loop src={budgetVideo} controls width="100%" height="100%"></video></div>
+                        <div className='img-container'><video loop src={budgetVideo} controls width="100%" ></video></div>
                         <a href='http://www.budget-react-app.online' target='_blank' rel='noreferrer'><h5 className='project-title'>Budget app</h5>
                         <p className='project-description'>Budget app using login/authentication and simple react useState </p>
                         </a>
@@ -39,7 +39,7 @@ const Services = () => {
                 </div>
                 <div className='project'>
                     <article>
-                        <div className='img-container'><img src={gallery} alt="gallery project" className='projects-portfolio'/></div>
+                        <div className='img-container'><img src={gallery} width="100%" height="100%" alt="gallery project" className='projects-portfolio'/></div>
                         <a href='http://www.finder-filter.online' target='_blank' rel='noreferrer'><h5 className='project-title'>Filterable Gallery</h5>
                         <p className='project-description'>Small application using Javascript and React filter methods</p>
                         </a>
@@ -47,7 +47,7 @@ const Services = () => {
                 </div>
                 <div className='project'>
                     <article>
-                        <div className='img-container'><img src={countdownTimer} alt="countdownTimer project" className='projects-portfolio'/></div>
+                        <div className='img-container'><img src={countdownTimer} width="100%" height="100%" alt="countdownTimer project" className='projects-portfolio'/></div>
                         <a href='http://www.countdown-timer.online' target='_blank' rel='noreferrer'><h5 className='project-title'>Countdown Timer</h5>
                         <p className='project-description'>Here is a small application using React, props, useState and useEffect</p>
                         </a>
