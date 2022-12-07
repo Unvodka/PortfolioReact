@@ -54,6 +54,7 @@
   height: 30px;
   background-color: wheat;
   margin: 10px;
+  padding: 5px;
 }
 .form-form {
   display: flex;
