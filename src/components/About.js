@@ -17,7 +17,7 @@ const About = () => {
     const text1 = "I achevied the Codecademy Full stack career path course and enjoyed learning differents topics and technologies like Nodejs, Expressjs, Passportjs and Mongodb but also around protocols security and other sub-subjects wich all are mainly essentiels. I'm now motivated to find a company to prove and improve my skills. I wich continue learning still helping as much as can with this motivation and enthousiastism i got thinking about real world applications.";
     const text2 = "Time to get more understanding of web development. I realised a bit more the width  and height of the web, his mecanisms and languages. I stayed focus on Javascript and React. I started Codecademy pro courses like 'Learn Javascript', or 'Learn React.js', also some sides videos on youtube as well and almost all courses was part of the Full stack career path course still on Codecademy. ";
     const text3 = "I started to learn coding and his basics wich are HTLM and CSS. I appreciate to discover new skills, it was the beginning of an amazing coding experience. It wasn't that hard for a swimming teacher and with enthousiasm i kept going. Then i started to write code on the side just to practice and watch videos like advanced css, flexbox etc... , and others comparing differents technologies around Javascript wich was recommended by a Web Developer friend";
-    const text4 = "I worked for 5 years as self-employed swimming teacher and aquafitness instructor in pools, spa, hotels and sport centers. That was a really good experience wich teached me to work with differents publics and differents structures. Also as work in team and respect protocols. I really enjoyed it but i decided to change my activity when the Covid came and close everything about sport. Then i started to learn wev development.";
+    const text4 = "I worked for 5 years as self-employed swimming teacher and aquafitness instructor in pools, spa, hotels and sport centers. That was a really good experience wich teached me to work with differents publics and differents structures. Also as work in team and respect protocols. I really enjoyed it but i decided to change my activity when the Covid came and close everything about sport. Then i started to learn web development.";
 
     return (
         <>
@@ -28,7 +28,7 @@ const About = () => {
                 <p className="description" style={{backgroundColor: darkMode ? '#222' : 'wheat'}}>Hi, 
         My name is Arnaud and i'm a junior Web Developer.
         I did a full-stack Javascript course on <a href='https://www.codecademy.com.' rel="noreferrer" target='_blank'>https://www.codecademy.com</a> wich thaught me fondamentals of javascript and the web, then i started to learn how to use MongoDb, Express.js, React.js, and Node.js to follow the MERN stack.
-        I kept studying around Javascript, Redux and i'm now building small web applications and open to any additional training or job.
+        I kept studying around Javascript and i'm now building small web applications and open to any additional training or job.
         <br></br>
         I'm still watching tons of tutorials, and take a special look at the documentation available for each technology that i'm using. Wich is good for fast and better understanding of technologies specifications and schemas.<br />
 

@@ -7,20 +7,27 @@ import './Navbar.css'
 
 const Navbar = () => {
 
-    const theme = useContext(ThemeContext);
-    const darkMode = theme.state.darkMode;
+        const theme = useContext(ThemeContext);
+        const darkMode = theme.state.darkMode;
 
-    return (
-        <nav className="navbar navbar-expand-lg" style={{backgroundColor: darkMode ? '#222' : 'wheat',
-        color: darkMode ? 'wheat' : '#222'}}>
-    
-        <div className="container">
-            
-            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        return (
+                <nav className="navbar navbar-expand-lg" style={{backgroundColor: darkMode ? '#222' : 'wheat',
+                        color: darkMode ? 'wheat' : '#222'}}>
+
+                <div className="container">
+
+                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <FontAwesomeIcon icon={ faBars } style={{ color: darkMode ? "Antiquewhite" : "#222", backgroundColor: darkMode ? "#222" : "wheat"}}/>
-            </button>
+                </button>
 
-            <div className="collapse navbar-collapse" id="navbarSupportedContent" style={{backgroundColor: darkMode ? '#222' : 'wheat',
+                <div className="logo">
+					<div className="logo-txt">
+						<h4>Arnaudcadev</h4>
+						<p>Let's make it simple</p>
+					</div>
+				</div>
+
+                <div className="collapse navbar-collapse" id="navbarSupportedContent" style={{backgroundColor: darkMode ? '#222' : 'wheat',
                         borderBottom: darkMode ? "1px solid wheat" : '1px solid #222'}}>
                 <ul className="navbar-nav ml-auto" style={{backgroundColor: darkMode ? '#222' : 'wheat',
                             color: darkMode ? 'wheat' : '#222'}}>
