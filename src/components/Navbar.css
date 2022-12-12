@@ -7,7 +7,7 @@ nav {
   width: 220px;
   height: 80px;
   position: fixed;
-  left: 1rem;
+  left: 2rem;
   top: 1rem;
   z-index: 17;
 }
@@ -39,7 +39,7 @@ nav {
 #navbarSupportedContent {
   max-width: 100%;
   position: fixed;
-  right: 0;
+  left: 0;
   height: 6rem;
   width: 100vw;
   z-index: 15;
@@ -70,7 +70,7 @@ nav a.nav-links {
   border-top: 1px solid rgb(119, 119, 119);
 }
 ul {
-  margin: 0 auto;
+  margin-left: 25%;
 }
 nav ul li {
   text-transform: uppercase;
@@ -78,11 +78,22 @@ nav ul li {
 }
 
 @media screen and (max-width: 1500px) {
-
+  nav ul li {
+    margin: 0.5rem 1rem;
+  }
+  ul {
+    margin-left: 20%;
+  }
 }
 
-@media screen and (max-width: 1199px) {
-
+@media screen and (max-width: 1000px) {
+  .logo {
+    position: relative;
+    top: -0.5rem;
+    left: -45%;
+    width: 100px;
+    height: 40px;
+  }
 }
 
 @media screen and (max-width: 780px) {
@@ -90,6 +101,10 @@ nav ul li {
 }
 
 @media screen and (max-width: 420px) {
+  .navbar-nav {
+    margin-top: 5.5rem;
+
+  }
   .nav-item {
     margin-left: 30%;
   }
