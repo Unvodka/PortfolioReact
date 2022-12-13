@@ -18,10 +18,13 @@
   width: 50%;
 }
 .footer-left svg {
-  margin-left: 10%;
+  margin: 5px;
 }
 .footer-left a,  .footer-right a {
   text-decoration: none;
+}
+.footer-left p {
+  margin: 0;
 }
 
 .footer-right {

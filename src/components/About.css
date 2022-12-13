@@ -43,14 +43,14 @@
   text-align: center;
 }
 .btn-readmore {
-  background-color: grey;
+  background-color: rgb(89, 88, 88);
   width: 80px;
   border: 0px;
   color: whitesmoke;
   border-radius: 5px;
 }
 .btn-readmore:hover {
-  color: rgb(105, 105, 107);
+  color: rgb(71, 244, 89);
 }
 .box-timeline a {
   font-size: 14px;

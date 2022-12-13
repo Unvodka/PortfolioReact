@@ -22,8 +22,10 @@ const Navbar = () => {
 
                 <div className="logo">
 					<div className="logo-txt">
-						<h4>Arnaudcadev</h4>
-						<p>Let's make it simple</p>
+						<h5 style={{textShadow: darkMode ? '1px 1px 1px black' : '1px 1px 1px black',
+                        color: darkMode ? 'white' : 'white'}}>Arnaudcadev</h5>
+						<p style={{textShadow: darkMode ? '1px 1px 1px black' : '1px 1px 1px black',
+                        color: darkMode ? 'rgb(71, 244, 89)' : 'rgb(71, 244, 89)'}}>Let's make it simple</p>
 					</div>
 				</div>
 
