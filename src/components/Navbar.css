@@ -1,4 +1,5 @@
-nav,.navbar-nav {
+nav,
+.navbar-nav {
   z-index: 15;
 }
 .logo {
@@ -20,7 +21,7 @@ nav,.navbar-nav {
 .logo-txt {
   margin: 5px;
   text-align: center;
-} 
+}
 .navbar {
   display: flex;
   flex-direction: row;
@@ -50,10 +51,11 @@ nav a.nav-links {
   text-transform: uppercase;
 }
 .nav-item > a {
-  padding-top: 0.65rem;
+  padding-top: 0.25rem;
 }
 .nav-item > a:hover {
-  border-top: 1px solid rgb(71, 244, 89);
+  color: antiquewhite;
+  border-top: 1px solid rgb(59, 204, 73);
 }
 nav ul li {
   text-transform: uppercase;
@@ -86,5 +88,4 @@ nav ul li {
   }
 }
 @media screen and (max-width: 361px) {
-  
 }

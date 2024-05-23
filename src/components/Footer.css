@@ -20,7 +20,8 @@
 .footer-left svg {
   margin: 5px;
 }
-.footer-left a,  .footer-right a {
+.footer-left a,
+.footer-right a {
   text-decoration: none;
 }
 .footer-left p {
@@ -34,7 +35,8 @@
   width: 30%;
   padding: 2rem;
 }
-.footer-right, .footer-right a {
+.footer-right,
+.footer-right a {
   flex-direction: column;
   padding: 0;
   margin: 6px;
@@ -57,11 +59,15 @@
 }
 
 @media screen and (max-width: 1199px) {
-
 }
 
 @media screen and (max-width: 780px) {
-
+  .footer-left {
+    flex-direction: column;
+  }
+  .footer-left div {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 420px) {
@@ -75,5 +81,4 @@
 }
 
 @media screen and (max-width: 361px) {
-  
 }
